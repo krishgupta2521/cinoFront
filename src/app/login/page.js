@@ -29,10 +29,10 @@ const page = () => {
                     <p className="text-[#571b98] text-xl my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
 
                     <div className="input-group">
-                        <input type="text" placeholder="devian.ee/yourname" className="px-2 py-2 bg-purple-100 rounded-md focus:outline-purple-800" />
-                        <button className="mx-3 font-bold bg-purple-300 rounded-full p-4">
+                        <Link href={'/register'}><button className="my-3 font-bold bg-purple-300 rounded-full p-4">
                             Get Started
                         </button>
+                        </Link>
                     </div>
 
                 </div>
@@ -75,7 +75,7 @@ const page = () => {
 
             <section className="min-h-[100vh] items-center justify-center">
                 <div className="flex mx-12 flex-col gap-1 mt-30 text-center">
-                    <p className="text-[#571b98] font-extrabold text-6xl">The only carrier guide trusted by</p>
+                    <p className="text-[#571b98] font-extrabold text-6xl">The only carrer guide trusted by</p>
                     <WordRotate
                         className="text-6xl font-extrabold text-[#571b98]"
                         words={["Students..", "Job Seekers..", "Employees.."]}
@@ -136,7 +136,7 @@ const page = () => {
 
 
 
-        </main>
+        </main >
     );
 };
 

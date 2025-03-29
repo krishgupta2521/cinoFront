@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 export default function Home() {
-  const words = ["better..", "cute..", "beautiful..", "modern.."];
+  const words = ["better..", "modern..", "new.."];
   return (
     <>
       <div className="flex justify-center flex-col gap-4 items-center my-10 h-[40vh] px-5 md:px-0 text-xs md:text-base ">
