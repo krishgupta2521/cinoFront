@@ -57,17 +57,17 @@ const Dashboard = () => {
                     ))}
 
                     <div className="mt-6">
-                        <button
-                            type="submit"
-                            className="w-full p-3 text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-purple-500 focus:ring-4 font-bold text-lg"
-                        >
-                            Login
-                        </button>
+                        <Link href="/login" >
+                            <button
+                                type="submit"
+                                className="w-full p-3 text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-purple-500 focus:ring-4 font-bold text-lg"
+                            >
+                                Login
+                            </button>
+                        </Link>
                     </div>
 
-                    <p className="text-center text-purple-700 mt-4">
-                        Don't have an account? <Link href="/register" className="font-bold text-purple-800 hover:underline">Sign Up</Link>
-                    </p>
+
                 </form>
             </div>
         </div>
