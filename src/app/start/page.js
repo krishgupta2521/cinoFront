@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
+import { useRouter } from "next/navigation";  // <-- Use useRouter hook here
 
 const goalsList = [
     { label: "AI Concepts", icon: "🤖" },
@@ -66,6 +66,8 @@ const SelectionComponent = ({ title, items, maxSelection, localStorageKey }) => 
 };
 
 const UserSelections = () => {
+    const router = useRouter();  // <-- Use the useRouter hook here
+
     const handleContinue = () => {
         const selectedGoals = JSON.parse(localStorage.getItem("userInterests")) || [];
         const selectedSkills = JSON.parse(localStorage.getItem("userSkills")) || [];
@@ -73,6 +75,9 @@ const UserSelections = () => {
         console.log("Selected Goals:", selectedGoals);
         console.log("Selected Skills:", selectedSkills);
 
+        setTimeout(() => {
+            router.push("/login");  // Now, we can navigate to the login page
+        }, 1000);
     };
 
     return (
@@ -81,12 +86,11 @@ const UserSelections = () => {
             <SelectionComponent title="Select Your Skills" items={skillsList} maxSelection={7} localStorageKey="userSkills" />
             <button
                 onClick={handleContinue}
-                className="mt-10 animate-pulse bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300"
+                className="cursor-pointer mt-10 animate-pulse bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300"
             >
                 Continue
             </button>
         </div>
-
     );
 };
 
