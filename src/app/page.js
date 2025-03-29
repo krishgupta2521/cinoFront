@@ -17,7 +17,7 @@ export default function Home() {
             </span>
           </h2>
           <div>
-            <Link href="/login">
+            <Link href="/register">
               <button className="p-[3px] relative my-3">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
                 <div className="px-8 py-2 bg-white text-black rounded-[6px]  relative group transition duration-200 font-semibold hover:bg-transparent hover:cursor-pointer">

@@ -29,11 +29,11 @@ const Navbar = () => {
                 </div>
                 <div className="flex gap-3 m-2">
                     <SignedOut>
-                        <SignInButton >
+                        <Link href="/register">
                             <button className="login text-black bg-gray-200 p-3 rounded-lg font-bold hover:bg-gray-300 transition duration-200 m-2">
                                 Log in
                             </button>
-                        </SignInButton >
+                        </Link>
                         <SignUpButton >
                             <button className="signup bg-gray-900 text-white font-bold p-2 rounded-full hover:bg-gray-800 transition duration-200 mb-1 me-1 mt-0.5">
                                 Sign up free
