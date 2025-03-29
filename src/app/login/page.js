@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { WordRotate } from "@/components/ui/word-rotate";
-
+import Accordion from "@/components/ui/accordian";
 
 const page = () => {
     useEffect(() => {
@@ -78,10 +78,10 @@ const page = () => {
                     <p className="text-[#571b98] font-extrabold text-6xl">The only carrier guide trusted by</p>
                     <WordRotate
                         className="text-6xl font-extrabold text-[#571b98]"
-                        words={["User..", "Students..", "Job Seekers..", "Employees.."]}
+                        words={["Students..", "Job Seekers..", "Employees.."]}
                     />
 
-                    <div className='my-20'>
+                    <div className='my-24'>
                         <InfiniteSlider durationOnHover={100} gap={35}>
                             <img
                                 src="https://i.scdn.co/image/ab67616d00001e02ad24c5e36ddcd1957ad35677"
@@ -115,10 +115,21 @@ const page = () => {
                             />
                         </InfiniteSlider>
                     </div>
-                    <div className="input-group ">
+                    <div className="input-group my-8 ">
                         <button className="my-2 font-bold bg-purple-300 shadow-purple-900 rounded-full p-5">
-                            Explore Plans
+                            Explore All Plans
                         </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="bg-[#4c1f79] min-h-[100vh]">
+
+                <div className="flex justify-center flex-col mr-[-5vr]  gap-1">
+                    <p className="text-pink-200 text-center my-16 font-extrabold text-6xl">Got questions?</p>
+                    <div>
+                        <Accordion />
                     </div>
                 </div>
             </section>
