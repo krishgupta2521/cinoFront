@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Dashboard = () => {
+    const router = useRouter();
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -22,12 +23,15 @@ const Dashboard = () => {
             return;
         }
 
-        console.log("Form submitted:", form);
+        localStorage.setItem("userDetails", JSON.stringify(form));
+        console.log("Form submitted and saved to local storage:", form);
+
+        router.push("/login");
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center">
-            <div className="bg-white p-5 rounded-lg shadow-lg w-96">
+        <div className="min-h-screen flex items-center justify-center mt-5">
+            <div className="p-10 rounded-lg w-96">
                 <h1 className="text-center text-4xl font-extrabold text-purple-700 mb-6">LOGIN</h1>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -57,14 +61,12 @@ const Dashboard = () => {
                     ))}
 
                     <div className="mt-6">
-                        <Link href="/login" >
-                            <button
-                                type="submit"
-                                className="w-full p-3 text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-purple-500 focus:ring-4 font-bold text-lg"
-                            >
-                                Login
-                            </button>
-                        </Link>
+                        <button
+                            type="submit"
+                            className="w-full p-4 my-8 text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-purple-500 focus:ring-4 font-bold text-lg"
+                        >
+                            Save
+                        </button>
                     </div>
 
 
