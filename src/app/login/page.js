@@ -29,9 +29,11 @@ const page = () => {
                     <p className="text-[#571b98] text-xl my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
 
                     <div className="input-group">
-                        <button className="my-3 font-bold bg-purple-300 rounded-full p-4">
-                            Get Started
-                        </button>
+                        <Link href={"/start"}>
+                            <button className="my-3 font-bold bg-purple-300 rounded-full p-4">
+                                Get Started
+                            </button>
+                        </Link>
                     </div>
 
                 </div>
