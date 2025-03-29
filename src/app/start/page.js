@@ -83,7 +83,7 @@ const UserSelections = () => {
     return (
         <div className="flex flex-col items-center min-h-screen p-6 space-y-6">
             <SelectionComponent title="Select Your Goals" items={goalsList} maxSelection={6} localStorageKey="userInterests" />
-            <SelectionComponent title="Select Your Skills" items={skillsList} maxSelection={7} localStorageKey="userSkills" />
+            <SelectionComponent title="Select Your Skills" items={skillsList} maxSelection={6} localStorageKey="userSkills" />
             <button
                 onClick={handleContinue}
                 className="cursor-pointer mt-10 animate-pulse bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300"
