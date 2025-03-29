@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 
 const faqs = [
     {
-        question: "What is Devains?",
+        question: "What is Devians?",
         answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-        question: "How does Devains help in career guidance?",
-        answer: "Devains provides tailored career advice and resources to help individuals navigate their professional journey.",
+        question: "How does Devians help in career guidance?",
+        answer: "Devians provides tailored career advice and resources to help individuals navigate their professional journey.",
     },
     {
-        question: "Can Devains help with resume building?",
-        answer: "Yes! Devains offers AI-powered resume building tools to enhance your job applications.",
+        question: "Can Devians help with resume building?",
+        answer: "Yes! Devians offers AI-powered resume building tools to enhance your job applications.",
     },
     {
         question: "Where can I download the app?",
-        answer: "Yes! Devains offers AI-powered resume building tools to enhance your job applications.",
+        answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
 ];
 
@@ -29,7 +29,7 @@ export default function Accordion() {
     };
 
     return (
-        <div className="max-w-5xl mx-auto p-8 space-y-1">
+        <div className="max-w-5xl mx-auto p-7 space-y-1">
 
             {faqs.map((faq, index) => (
                 <div key={index} className="mb-4 rounded-b-lg shadow-lg ">
