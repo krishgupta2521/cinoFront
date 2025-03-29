@@ -15,7 +15,7 @@ import {
 const Navbar = () => {
     return (
         <ClerkProvider>
-            <nav className="flex h-18 justify-between items-center text-white bg-purple-700">
+            <nav className="flex h-18 justify-between items-center text-white bg-purple-600">
 
                 <div className="logo flex items-center justify-center">
                     <img className='flex rounded-full m-3 px-1 h-12' src='https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-student-glyph-black-icon-png-image_691145.jpg' />
