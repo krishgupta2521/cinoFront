@@ -53,7 +53,7 @@ const SelectionComponent = ({ title, items, maxSelection, localStorageKey }) => 
                     <button
                         key={label}
                         onClick={() => handleSelect(label)}
-                        className={`flex items-center px-4 py-2 rounded-full text-lg font-semibold transition-all duration-300 
+                        className={`flex items-center px-4 py-2 rounded-full text-lg font-semibold transition-all duration-300 cursor-pointer
                             ${selectedItems.includes(label) ? "bg-purple-500 text-white" : "bg-gray-100 border border-purple-400 text-gray-700"}
                         `}
                     >

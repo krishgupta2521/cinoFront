@@ -85,7 +85,7 @@ const page = () => {
                     <div className='my-24'>
                         <InfiniteSlider durationOnHover={100} gap={35}>
                             <img
-                                src="https://i.scdn.co/image/ab67616d00001e02ad24c5e36ddcd1957ad35677"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG9e5FR0IF91RVN46kjaNloU3jiIpgioPVzg&s"
                                 alt="Dean blunt - Black Metal 2"
                                 className="aspect-square w-[200px] rounded-[4px]"
                             />
