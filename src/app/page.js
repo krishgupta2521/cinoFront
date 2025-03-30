@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <div className="h-1 bg-purple-800 opacity-20" />
       <div className="text-black container mx-auto pb-32 pt-20 px-10 items-center justify-center">
-        <h2 className="text-4xl font-bold text-center mb-14">We are here to help !</h2>
+        <h2 className="text-4xl font-bold text-center mb-14">We are here to help!</h2>
         <div className="flex gap-5 justify-around items-center">
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={88} src="/man.gif" alt="" />
