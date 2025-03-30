@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 
 
+
 const goalsList = [
     { label: "AI Concepts", icon: "🤖" },
     { label: "Machine Learning", icon: "📊" },
@@ -88,7 +89,7 @@ const UserSelections = () => {
             <SelectionComponent title="Select Your Skills" items={skillsList} maxSelection={6} localStorageKey="userSkills" />
             <button
                 onClick={handleContinue}
-                className="cursor-pointer mt-10 animate-pulse bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300"
+                className="cursor-pointer mt-10 animate-bounce bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300"
             >
                 Continue
             </button>
