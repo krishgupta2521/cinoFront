@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+
+
 const goalsList = [
     { label: "AI Concepts", icon: "🤖" },
     { label: "Machine Learning", icon: "📊" },

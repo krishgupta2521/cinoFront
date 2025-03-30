@@ -7,6 +7,8 @@ import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { WordRotate } from "@/components/ui/word-rotate";
 import Accordion from "@/components/ui/accordian";
 
+
+
 const page = () => {
     useEffect(() => {
         AOS.init({
