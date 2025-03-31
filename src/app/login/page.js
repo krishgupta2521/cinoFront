@@ -7,6 +7,9 @@ import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { WordRotate } from "@/components/ui/word-rotate";
 import Accordion from "@/components/ui/accordian";
 import { ReactLenis } from 'lenis/react'
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
+
 
 
 const page = () => {
@@ -21,6 +24,7 @@ const page = () => {
 
     return (
         <ReactLenis root>
+            <Navbar />
             <main>
                 <section className="min-h-[100vh] grid grid-cols-1 md:grid-cols-2 px-4 sm:px-6 md:px-8">
                     <div className="flex justify-center flex-col ml-0 md:ml-[5vw] lg:ml-[10vw] gap-1 mt-16">
@@ -132,6 +136,7 @@ const page = () => {
                     </div>
                 </section>
             </main>
+            <Footer />
         </ReactLenis>
     );
 };

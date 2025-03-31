@@ -3,8 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/navigation';
 import 'react-toastify/dist/ReactToastify.css';
-import { ReactLenis } from 'lenis/react'
-
+import { ReactLenis } from 'lenis/react';
 
 const Manager = () => {
     const ref = useRef();
@@ -61,54 +60,58 @@ const Manager = () => {
 
     return (
         <ReactLenis root>
-            <div className="flex justify-center items-center h-screen">
-                <div className="p-10 rounded-2xl w-96 text-center">
-                    <h2 className="text-6xl font-bold text-purple-600 mb-10">LOGIN</h2>
-                    <input
-                        value={form.email}
-                        onChange={handleChange}
-                        placeholder='Enter Email'
-                        className='w-full p-3 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
-                        type="email"
-                        name="email"
-                    />
-                    <input
-                        value={form.username}
-                        onChange={handleChange}
-                        placeholder='Enter Username'
-                        className='w-full p-3 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
-                        type="text"
-                        name="username"
-                    />
-                    <div className="relative w-full">
+            <div className="flex min-h-screen w-full">
+                <div className="w-1/2 flex justify-center items-center p-10">
+                    <div className="w-96 text-center">
+                        <h2 className="text-6xl font-bold mb-10 tracking-tighter">LOGIN</h2>
                         <input
-                            ref={passwordRef}
-                            value={form.password}
+                            value={form.email}
                             onChange={handleChange}
-                            placeholder='Enter Password'
-                            className='w-full p-3 pr-10 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
-                            type="password"
-                            name="password"
+                            placeholder='Enter Email'
+                            className='w-full p-3 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
+                            type="email"
+                            name="email"
                         />
-                        <span className='absolute right-3 top-3 cursor-pointer' onClick={showPassword}>
-                            <img ref={ref} width={28} src="/eye.png" alt="eye" />
-                        </span>
+                        <input
+                            value={form.username}
+                            onChange={handleChange}
+                            placeholder='Enter Username'
+                            className='w-full p-3 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
+                            type="text"
+                            name="username"
+                        />
+                        <div className="relative w-full">
+                            <input
+                                ref={passwordRef}
+                                value={form.password}
+                                onChange={handleChange}
+                                placeholder='Enter Password'
+                                className='w-full p-3 pr-10 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
+                                type="password"
+                                name="password"
+                            />
+                            <span className='absolute right-3 top-3 cursor-pointer' onClick={showPassword}>
+                                <img ref={ref} width={28} src="/eye.png" alt="eye" />
+                            </span>
+                        </div>
+                        <input
+                            value={form.confirmpassword}
+                            onChange={handleChange}
+                            placeholder='Confirm Password'
+                            className='w-full p-3 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
+                            type="password"
+                            name="confirmpassword"
+                        />
+                        <button
+                            onClick={handleSubmit}
+                            className='w-full cursor-pointer animate-bounce mt-6 bg-purple-700 text-white font-bold p-3 rounded-full hover:bg-purple-800 transition duration-200'
+                        >
+                            Continue
+                        </button>
                     </div>
-                    <input
-                        value={form.confirmpassword}
-                        onChange={handleChange}
-                        placeholder='Confirm Password'
-                        className='w-full p-3 mb-6 border border-purple-500 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-700'
-                        type="password"
-                        name="confirmpassword"
-                    />
-                    <button
-                        onClick={handleSubmit}
-                        className='w-full cursor-pointer animate-bounce mt-6 bg-purple-700 text-white font-bold p-3 rounded-full hover:bg-purple-800 transition duration-200'
-                    >
-                        Continue
-                    </button>
                 </div>
+
+                <div className="w-1/2 h-screen bg-cover bg-center " style={{ backgroundImage: "url('/login.webp')" }}></div>
             </div>
         </ReactLenis>
     );

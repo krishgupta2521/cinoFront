@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ReactLenis } from 'lenis/react'
-
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
 
 
 
@@ -48,7 +49,9 @@ const SelectionComponent = ({ title, items, maxSelection, localStorageKey }) => 
     };
 
     return (
+
         <ReactLenis root>
+            <Navbar />
             <div className="w-full max-w-md mx-auto bg-purple-300 shadow-lg rounded-lg p-6 mt-20">
                 <h2 className="text-xl font-bold text-gray-800 text-center">{title}</h2>
                 <p className="text-gray-600 text-center mb-4">Select up to {maxSelection}</p>
@@ -99,6 +102,7 @@ const UserSelections = () => {
                     Continue
                 </button>
             </div>
+            <Footer />
         </ReactLenis>
     );
 };
