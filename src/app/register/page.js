@@ -63,7 +63,7 @@ const Manager = () => {
             <div className="flex min-h-screen w-full">
                 <div className="w-1/2 flex justify-center items-center p-10">
                     <div className="w-96 text-center">
-                        <h2 className="text-6xl font-bold mb-10 tracking-tighter">LOGIN</h2>
+                        <h2 className="text-6xl font-bold mb-14 tracking-tight subpixel-antialiased">LOGIN !</h2>
                         <input
                             value={form.email}
                             onChange={handleChange}
@@ -111,7 +111,7 @@ const Manager = () => {
                     </div>
                 </div>
 
-                <div className="w-1/2 h-screen bg-cover bg-center " style={{ backgroundImage: "url('/login.webp')" }}></div>
+                <div className="w-1/2 h-screen bg-cover bg-center border-2 border-solid" style={{ backgroundImage: "url('/login.webp')" }}></div>
             </div>
         </ReactLenis>
     );

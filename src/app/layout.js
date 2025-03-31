@@ -19,13 +19,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="min-h-[87vh] absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+    <html lang="en" className="min-h-screen bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <LayoutWrapper>
-          <div className="min-h-[87vh] absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-            <div className="absolute bottom-0.1 left-0 right-0 top-0 bg-[radial-gradient(circle_900px_at_100%_200px,#d5c5ff,transparent)]">
-              {children}
-            </div>
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_900px_at_100%_200px,#d5c5ff,transparent)]">
+          </div>
+          <div className="relative">
+            {children}
           </div>
         </LayoutWrapper>
       </body>
