@@ -22,7 +22,7 @@ const page = () => {
     return (
         <ReactLenis root>
             <main>
-                s            <section className="min-h-[100vh] grid grid-cols-1 md:grid-cols-2 px-4 sm:px-6 md:px-8">
+                <section className="min-h-[100vh] grid grid-cols-1 md:grid-cols-2 px-4 sm:px-6 md:px-8">
                     <div className="flex justify-center flex-col ml-0 md:ml-[5vw] lg:ml-[10vw] gap-1 mt-16">
                         <p className="text-[#571b98] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Everything you </p>
                         <p className="text-[#571b98] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">want. Let us,</p>

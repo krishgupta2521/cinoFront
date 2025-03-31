@@ -19,7 +19,7 @@ const Navbar = () => {
             <nav className="w-full flex justify-between items-center px-8 py-5 bg-purple-700 text-white fixed top-0 left-0 z-50">
                 <div className="flex items-center space-x-3">
                     <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-student-glyph-black-icon-png-image_691145.jpg" alt="Logo" className="h-10 w-10 rounded-full" />
-                    <h1 className="text-2xl font-bold tracking-wider">Devians</h1>
+                    <h1 className="text-3xl font-bold">Devians</h1>
                 </div>
 
                 <motion.button
