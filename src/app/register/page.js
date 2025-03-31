@@ -3,6 +3,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/navigation';
 import 'react-toastify/dist/ReactToastify.css';
+import { ReactLenis } from 'lenis/react'
+
 
 const Manager = () => {
     const ref = useRef();
@@ -58,7 +60,7 @@ const Manager = () => {
     };
 
     return (
-        <>
+        <ReactLenis root>
             <div className="flex justify-center items-center h-screen">
                 <div className="p-10 rounded-2xl w-96 text-center">
                     <h2 className="text-6xl font-bold text-purple-600 mb-10">LOGIN</h2>
@@ -108,7 +110,7 @@ const Manager = () => {
                     </button>
                 </div>
             </div>
-        </>
+        </ReactLenis>
     );
 };
 
