@@ -1,105 +1,58 @@
 "use client";
-import React, { useState } from 'react';
-import Link from 'next/link';
-import {
-    ClerkProvider,
-    SignUpButton,
-    SignedIn,
-    SignedOut,
-    UserButton,
-} from '@clerk/nextjs';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Menu } from "lucide-react";
+import FlowingMenu from "./FlowingMenu";
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+    const demoItems = [
+        { link: '/', text: 'Home', image: 'https://picsum.photos/600/400?random=1' },
+        { link: '/', text: 'About', image: 'https://picsum.photos/600/400?random=2' },
+        { link: '/', text: 'Pricing', image: 'https://picsum.photos/600/400?random=3' },
+        { link: '/', text: 'Contact Us', image: 'https://picsum.photos/600/400?random=4' }
+    ];
 
     return (
-        <ClerkProvider>
-            <nav className="flex flex-col md:flex-row h-auto md:h-20 items-center text-white bg-purple-700">
-                <div className="w-full md:flex md:justify-between md:items-center px-4 py-3 md:py-0">
-                    <div className="flex items-center justify-between md:justify-start">
-                        <div className="flex items-center">
-                            <img className="rounded-full h-10 md:h-12 mr-3" src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-student-glyph-black-icon-png-image_691145.jpg" alt="Logo" />
-                            <ul className="hidden md:flex gap-4 text-xl font-semibold ml-4">
-                                <Link href="/"><li className="hover:text-gray-200">Home</li></Link>
-                                <Link href="/"><li className="hover:text-gray-200">About</li></Link>
-                                <Link href="/"><li className="hover:text-gray-200">Discover</li></Link>
-                                <Link href="/"><li className="hover:text-gray-200">Pricing</li></Link>
-                                <Link href="/"><li className="hover:text-gray-200">Learn</li></Link>
-                            </ul>
-                        </div>
-
-                        <button
-                            className="block md:hidden focus:outline-none"
-                            onClick={toggleMenu}
-                        >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                {isMenuOpen ? (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                                ) : (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                                )}
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div className="hidden md:flex md:items-center">
-                        <SignedOut>
-                            <Link href="/register">
-                                <button className="login text-black bg-gray-200 p-2 rounded-lg font-bold hover:bg-gray-300 transition duration-200 mx-2 cursor-pointer">
-                                    Log in
-                                </button>
-                            </Link>
-                            <SignUpButton>
-                                <button className="signup bg-gray-900 text-white font-bold p-2 rounded-full hover:bg-gray-800 transition duration-200 cursor-pointer">
-                                    Sign up free
-                                </button>
-                            </SignUpButton>
-                        </SignedOut>
-                        <SignedIn>
-                            <div className="flex items-center">
-                                <p className="text-white font-bold mx-2 text-lg">Welcome!</p>
-                                <UserButton />
-                            </div>
-                        </SignedIn>
-                    </div>
+        <div className="relative w-full">
+            <nav className="w-full flex justify-between items-center px-8 py-5 bg-purple-700 text-white fixed top-0 left-0 z-50">
+                <div className="flex items-center space-x-3">
+                    <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-student-glyph-black-icon-png-image_691145.jpg" alt="Logo" className="h-10 w-10 rounded-full" />
+                    <h1 className="text-2xl font-bold tracking-wider">Devians</h1>
                 </div>
 
-                <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:hidden px-4 pb-4`}>
-                    <ul className="flex flex-col space-y-2 font-semibold text-lg">
-                        <Link href="/"><li className="py-2 border-b border-purple-600">Home</li></Link>
-                        <Link href="/"><li className="py-2 border-b border-purple-600">About</li></Link>
-                        <Link href="/"><li className="py-2 border-b border-purple-600">Discover</li></Link>
-                        <Link href="/"><li className="py-2 border-b border-purple-600">Pricing</li></Link>
-                        <Link href="/"><li className="py-2">Learn</li></Link>
-                    </ul>
-
-                    <div className="mt-4">
-                        <SignedOut>
-                            <Link href="/register" className="block w-full">
-                                <button className="w-full login text-black bg-gray-200 p-4 rounded-lg font-bold hover:bg-gray-300 transition duration-200 my-2 cursor-pointer">
-                                    Log in
-                                </button>
-                            </Link>
-                            <SignUpButton>
-                                <button className="w-full signup bg-gray-900 text-white font-bold p-4 rounded-full hover:bg-gray-800 transition duration-200 cursor-pointer">
-                                    Sign up free
-                                </button>
-                            </SignUpButton>
-                        </SignedOut>
-                        <SignedIn>
-                            <div className="flex items-center justify-center py-3">
-                                <p className="text-white font-bold mr-2 text-xl">Welcome!</p>
-                                <UserButton />
-                            </div>
-                        </SignedIn>
-                    </div>
-                </div>
+                <motion.button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="flex items-center space-x-2 text-lg font-bold focus:outline-none"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    <motion.div
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: isOpen ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        {isOpen ? <X size={32} /> : <Menu size={32} />}
+                    </motion.div>
+                    <span className="ml-2">{isOpen ? "CLOSE" : "MENU"}</span>
+                </motion.button>
             </nav>
-        </ClerkProvider>
+
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, y: "-100%" }}
+                        animate={{ opacity: 1, y: "0%" }}
+                        exit={{ opacity: 0, y: "-100%" }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="fixed inset-0 bg-purple-700 flex flex-col items-center justify-center text-white text-3xl z-40"
+                    >
+                        <FlowingMenu items={demoItems} />
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </div>
     );
 };
 
