@@ -3,15 +3,13 @@ import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import Link from "next/link";
 import { ReactLenis } from 'lenis/react'
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
+
 
 
 export default function Home() {
   const words = ["better..", "modern..", "new.."];
   return (
     <ReactLenis root>
-      <Navbar />
       <div className="flex justify-center flex-col gap-4 items-center my-10 h-[40vh] px-5 md:px-0 text-xs md:text-base ">
         <div className=" flex flex-col items-center justify-center">
           <h2 className="bg-clip-text text-center dark:text-black text-2xl md:text-4xl lg:text-6xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
@@ -53,7 +51,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </ReactLenis>
   );
 }
