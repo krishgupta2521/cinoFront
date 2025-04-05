@@ -60,7 +60,7 @@ const Navbar = () => {
           {isMounted && username && (
             <button
               onClick={handleLogout}
-              className="font-bold bg-purple-300 shadow-purple-900 rounded-full p-3 md:p-5 cursor-pointer"
+              className="font-bold bg-purple-500 shadow-purple-900 rounded-full p-2 md:p-2 cursor-pointer"
             >
               Logout
             </button>

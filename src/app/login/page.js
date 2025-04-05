@@ -76,26 +76,23 @@ const page = () => {
 
             <div className="flex justify-center flex-col order-1 md:order-2 mx-4 md:mx-8 gap-1 py-8 md:py-0">
               <p className="text-pink-200 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                Chat and ask
+              Build and showcase
               </p>
               <p className="text-pink-200 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                us about your goal in
+              your skills
               </p>
               <p className="text-pink-200 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                minutes...
+              in just a few clicks...
               </p>
               <p className="text-pink-200 text-base md:text-lg lg:text-xl my-4">
-                Meet our smart chatbot – your instant learning guide! Whether
-                you’re confused about which domain to choose or what skills to
-                learn next, just start a chat and we’ll help you figure it out
-                in minutes. It’s fast, friendly, and fully personalized. No
-                forms, no stress – just tell us your interest, and we’ll handle
-                the rest!
+              Create a professional resume tailored to your goals in minutes.
+Highlight your achievements, projects, and skills with ease.
+Whether you're a student or a job seeker, we've got you covered.
               </p>
               <div className="input-group">
                 <Link href="/resume-check">
                   <button className="my-2 font-bold bg-pink-100 rounded-full p-3 md:p-5 cursor-pointer">
-                    Chat with AI
+                    Build your resume
                   </button>
                 </Link>
               </div>
@@ -140,7 +137,7 @@ const page = () => {
                     className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                   />
                   <img
-                    src="/rohit_m.png"
+                    src="/umang_m.jpg"
                     alt="Rohit"
                     className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                   />
@@ -152,9 +149,11 @@ const page = () => {
                 </InfiniteSlider>
               </div>
               <div className="input-group mb-2 md:my-8">
+                <Link href="/mentors">
                 <button className="font-bold bg-purple-300 shadow-purple-900 rounded-full p-3 md:p-5 cursor-pointer">
                   Explore All Plans
                 </button>
+                </Link>
               </div>
             </div>
           </section>
