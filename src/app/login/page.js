@@ -30,7 +30,10 @@ const page = () => {
                             <p className="text-[#571b98] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Everything you </p>
                             <p className="text-[#571b98] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">want. Let us,</p>
                             <p className="text-[#571b98] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">know we will guide you.</p>
-                            <p className="text-[#571b98] text-base md:text-lg lg:text-xl my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+                            <p className="text-[#571b98] text-base md:text-lg lg:text-xl my-4">Your learning journey, your way.
+Tell us your interests, goals, or even just your confusion — and we’ll craft a personalized roadmap to get you there.
+No more guesswork. Just clear direction, step by step.
+Start now — because the right guidance changes everything.</p>
 
                             <div className="input-group">
                                 <Link href={"/start"}>
@@ -67,7 +70,7 @@ const page = () => {
                             <p className="text-pink-200 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Chat and ask</p>
                             <p className="text-pink-200 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">us about your goal in</p>
                             <p className="text-pink-200 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">minutes...</p>
-                            <p className="text-pink-200 text-base md:text-lg lg:text-xl my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                            <p className="text-pink-200 text-base md:text-lg lg:text-xl my-4">Meet our smart chatbot – your instant learning guide! Whether you’re confused about which domain to choose or what skills to learn next, just start a chat and we’ll help you figure it out in minutes. It’s fast, friendly, and fully personalized. No forms, no stress – just tell us your interest, and we’ll handle the rest!</p>
                             <div className="input-group">
                                 <button className="my-2 font-bold bg-pink-100 rounded-full p-3 md:p-5 cursor-pointer">
                                     Chat with AI
@@ -87,27 +90,27 @@ const page = () => {
                             <div className='my-12 md:my-24 overflow-hidden'>
                                 <InfiniteSlider durationOnHover={100} gap={20} className="w-full">
                                     <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG9e5FR0IF91RVN46kjaNloU3jiIpgioPVzg&s"
+                                        src="/ipshita_m.jpg"
                                         alt="Dean blunt - Black Metal 2"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="https://i.scdn.co/image/ab67616d00001e02af73f776b92d4614152fb141"
+                                        src="krish_m.jpg"
                                         alt="Jungle Jack - JUNGLE DES ILLUSIONS VOL 2"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="https://i.scdn.co/image/ab67616d00001e02ecdb8f824367a53468100faf"
+                                        src="rachit_m.png"
                                         alt="Yung Lean - Stardust"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="https://i.scdn.co/image/ab67616d00001e021624590458126fc8b8c64c2f"
+                                        src="kohli_m.jpg"
                                         alt="Lana Del Rey - Ultraviolence"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="https://i.scdn.co/image/ab67616d00001e020dcf0f3680cff56fe5ff2288"
+                                        src="rohit_m.png"
                                         alt="A$AP Rocky - Tailor Swif"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />

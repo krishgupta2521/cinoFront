@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 const faqs = [
     {
         question: "What is Devians?",
-        answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        answer: "DEVIANS is a personalized roadmap generator designed to help students and learners navigate their career paths with clarity and confidence. Whether you're exploring new domains, switching fields, or just starting out, DEVIANS guides you with customized learning paths tailored to your interests, goals, and skill level — all in just a few clicks.",
     },
     {
         question: "How does Devians help in career guidance?",
-        answer: "Devians provides tailored career advice and resources to help individuals navigate their professional journey.",
+        answer: "DEVIANS provides personalized learning roadmaps based on your interests and goals, helping you choose the right career path with clear steps and trusted resources — all in minutes.",
     },
     {
         question: "Can Devians help with resume building?",
@@ -17,7 +17,7 @@ const faqs = [
     },
     {
         question: "Where can I download the app?",
-        answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        answer: "​Currently, the DEVIANS app isn't available for download on app stores. However, you can access its features through the official website. For the most accurate and up-to-date information, please visit the Devains website or contact our support team.",
     },
 ];
 
