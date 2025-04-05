@@ -9,16 +9,37 @@ const goalsList = [
   { label: "NLP", icon: "🗣️" },
   { label: "Image Recognition", icon: "📸" },
   { label: "AI Development", icon: "💻" },
-  { label: "AI Projects", icon: "🚀" },
+  { label: "App Development", icon: "📱" },
+  { label: "Cybersecurity", icon: "🔐" },
+  { label: "Blockchain & Web3", icon: "⛓️" },
+  { label: "Game Development", icon: "🕹️" },
+  { label: "UI/UX Designer", icon: "🎨" },
+  { label: "Graphic Designing", icon: "🖼️" },
+  { label: "3D Modeling & Animation", icon: "🧊" },
+  { label: "Video Editing / VFX", icon: "✂️" },
+  { label: "Content Creation", icon: "🎥" },
+  { label: "Product Management", icon: "📦" },
+  { label: "Government Exams", icon: "🏛️" },
+  { label: "Communication & Soft Skills", icon: "🗣️" },
+  { label: "DSA + System Design", icon: "🧠" },
 ];
 
 const skillsList = [
   { label: "Python", icon: "🐍" },
+  { label: "JavaScript", icon: "🟨" },
+  { label: "Machine Learning", icon: "🧠" },
   { label: "Data Analysis", icon: "📊" },
-  { label: "Deep Learning", icon: "🧠" },
-  { label: "TensorFlow", icon: "📦" },
-  { label: "PyTorch", icon: "🔥" },
+  { label: "React", icon: "⚛️" },
+  { label: "Cybersecurity", icon: "🔐" },
+  { label: "Blockchain", icon: "⛓️" },
   { label: "Cloud Computing", icon: "☁️" },
+  { label: "Git & GitHub", icon: "🐙" },
+  { label: "App Development", icon: "📱" },
+  { label: "C++", icon: "💠" },
+  { label: "Node.js", icon: "🌿" },
+  { label: "SQL & Databases", icon: "🗄️" },
+  { label: "UI/UX Design", icon: "🎨" },
+  { label: "Prompt Engineering", icon: "📝" },
 ];
 
 const SelectionComponent = ({
@@ -51,7 +72,7 @@ const SelectionComponent = ({
 
   return (
     <ReactLenis root>
-      <div className="w-full max-w-md mx-auto bg-purple-300 shadow-lg rounded-lg p-6 mt-20">
+      <div className="w-full max-w-4xl mx-auto bg-purple-300 shadow-lg rounded-lg p-6 mt-20">
         <h2 className="text-xl font-bold text-gray-800 text-center">{title}</h2>
         <p className="text-gray-600 text-center mb-4">
           Select up to {maxSelection}
@@ -62,7 +83,7 @@ const SelectionComponent = ({
             <button
               key={label}
               onClick={() => handleSelect(label)}
-              className={`flex items-center px-4 py-2 rounded-full text-lg font-semibold transition-all duration-300 cursor-pointer
+              className={`flex items-center px-6 py-4 rounded-full text-xl font-semibold transition-all duration-300 cursor-pointer shadow-md gap-2
 ${
   selectedItems.includes(label)
     ? "bg-purple-500 text-white"
