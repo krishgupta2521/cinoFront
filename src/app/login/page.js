@@ -91,32 +91,32 @@ Start now — because the right guidance changes everything.</p>
                                 <InfiniteSlider durationOnHover={100} gap={20} className="w-full">
                                     <img
                                         src="/ipshita_m.jpg"
-                                        alt="Dean blunt - Black Metal 2"
+                                        alt="Sorry for inconvenience"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="krish_m.jpg"
-                                        alt="Jungle Jack - JUNGLE DES ILLUSIONS VOL 2"
+                                        src="/krish_m.jpg"
+                                        alt="Sorry for inconvenience"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="rachit_m.png"
-                                        alt="Yung Lean - Stardust"
+                                        src="/rachit_m.png"
+                                        alt="Sorry for inconvenience"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="kohli_m.jpg"
-                                        alt="Lana Del Rey - Ultraviolence"
+                                        src="/kohli_m.jpg"
+                                        alt="Sorry for inconvenience"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="rohit_m.png"
-                                        alt="A$AP Rocky - Tailor Swif"
+                                        src="/rohit_m.png"
+                                        alt="Sorry for inconvenience"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                     <img
-                                        src="https://i.scdn.co/image/ab67616d00001e02bc1028b7e9cd2b17c770a520"
-                                        alt="Midnight Miami (feat Konvy) - Nino Paid, Konvy"
+                                        src="/kd_m.jpg   "
+                                        alt="Sorry for inconvenience"
                                         className="aspect-square w-[150px] sm:w-[180px] md:w-[200px] rounded-[4px]"
                                     />
                                 </InfiniteSlider>
