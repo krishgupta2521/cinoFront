@@ -26,7 +26,7 @@ const mentors = [
   {
     name: "Garv Kohli",
     photo: "/kohli_m.jpg",
-    title: "Video Editing/VFX Expert",
+    title: "Video Editing/VFX ",
     bio: "Video Editing/VFX expert with a keen eye for storytelling, visual composition, and cinematic effects. Proficient in Adobe After Effects, Premiere Pro, and advanced post-production techniques.",
     email: "garv@example.com",
   },
@@ -70,7 +70,7 @@ export default function MentorListPage() {
               className="block"
             >
               <button className="mt-4 w-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-medium py-2 rounded-xl shadow-md shadow-purple-900 hover:shadow-xl hover:scale-105 transition duration-300">
-                Explore all mentors
+                study {mentor.title}
               </button>
             </a>
           </div>
