@@ -15,7 +15,9 @@ bun dev
 ```
 
 run this command in your terminal 
+
 npx shadcn@latest add "https://21st.dev/r/ibelick/infinite-slider"
+
 npm install framer-motion
 
 
