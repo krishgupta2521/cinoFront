@@ -14,6 +14,11 @@ pnpm dev
 bun dev
 ```
 
+run this command in your terminal 
+npx shadcn@latest add "https://21st.dev/r/ibelick/infinite-slider"
+npm install framer-motion
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
